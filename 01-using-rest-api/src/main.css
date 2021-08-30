@@ -1,0 +1,27 @@
+:root {
+  --color-one: #4568dc;
+  --color-two: #b06ab3;
+  --color-secondary: white;
+  --color-accent: #542a83;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background: linear-gradient(
+    150deg,
+    var(--color-one) 0%,
+    var(--color-two) 100%
+  );
+  color: var(--color-secondary);
+  font-family: sans-serif;
+  line-height: 1.5em;
+  font-size: 18px;
+}
+
+a {
+  color: var(--color-accent);
+}

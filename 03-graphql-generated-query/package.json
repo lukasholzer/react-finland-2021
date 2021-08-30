@@ -1,0 +1,31 @@
+{
+  "name": "00-basic-ui",
+  "version": "1.0.0",
+  "description": "Fourth step of the react finland talk \"Automate your Stack with GraphQl\"",
+  "main": "index.js",
+  "scripts": {
+    "build:index": "rm -rf dist && mkdir -p dist && cp src/index.html dist/",
+    "build": "pnpm run build:index && esbuild src/main.tsx --outdir=dist --bundle --target=es2020",
+    "dev": "pnpm run build -- --servedir=dist",
+    "codegen": "graphql-codegen --config codegen.yml"
+  },
+  "author": "Lukas Holzer <lukas.holzer@typeflow.cc>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql": "^15.5.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.21.1"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.1.1",
+    "@graphql-codegen/near-operation-file-preset": "^2.1.2",
+    "@graphql-codegen/typescript": "^2.1.2",
+    "@graphql-codegen/typescript-operations": "^2.1.2",
+    "@graphql-codegen/typescript-react-query": "^2.1.2",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "esbuild": "^0.12.24",
+    "typescript": "^4.4.2"
+  }
+}

@@ -1,0 +1,18 @@
+overwrite: true
+schema: https://swapi-graphql.netlify.app/.netlify/functions/index
+documents: 'src/**/*.graphql'
+generates:
+  src/types.d.ts:
+    - typescript
+  src/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.ts
+      baseTypesPath: types.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-query
+    config:
+      skipTypename: true
+      fetcher:
+        endpoint: https://swapi-graphql.netlify.app/.netlify/functions/index
