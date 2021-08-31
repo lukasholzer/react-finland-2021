@@ -30,13 +30,13 @@ The cool stuff now is that it is 100% type safe. So when the api changes it will
 
 ### Added and Modified files:
 
-- [03-graphql-generated-query/codegen.yml](./03-graphql-generated-query/codegen.yml)
+- [codegen.yml](./03-graphql-generated-query/codegen.yml)
   - Specifies what should be generated and where
-- [03-graphql-generated-query/graphql.config.js](./03-graphql-generated-query/graphql.config.js)
+- [graphql.config.js](./03-graphql-generated-query/graphql.config.js)
   - used for VSCode autocompletion and live preview of queries
-- [03-graphql-generated-query/src/allPeople.graphql](./03-graphql-generated-query/src/allPeople.graphql)
+- [src/allPeople.graphql](./03-graphql-generated-query/src/allPeople.graphql)
   - we extracted the query in its own file
-- [03-graphql-generated-query/package.json](./03-graphql-generated-query/package.json)
+- [package.json](./03-graphql-generated-query/package.json)
   - Added following dependencies
     - `@graphql-codegen/cli`
     - `@graphql-codegen/near-operation-file-preset`
