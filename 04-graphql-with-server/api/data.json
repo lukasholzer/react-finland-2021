@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "name": "The Lord of the Rings",
+      "author": "J.R.R. Tolkien",
+      "description": "The Lord of the Rings is one of the best-selling books ever written, with over 150 million copies sold"
+    },
+    {
+      "name": "The Hobbit, or There and Back Again",
+      "author": "J.R.R. Tolkien",
+      "description": "The Hobbit, or There and Back Again is a children's fantasy novel."
+    },
+    {
+      "name": "I, Robot",
+      "author": "Isaac Asimov",
+      "description": "I, Robot is a fixup novel of science fiction short stories or essays by American writer Isaac Asimov"
+    },
+    {
+      "name": "The Very Hungry Caterpillar",
+      "author": "Eric Carle",
+      "description": "The Very Hungry Caterpillar is a children's picture book."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+query book($author: String) {
+  books(filter: { byAuthor: $author }) {
+    name
+    author
+  }
+}

@@ -13,10 +13,12 @@ export const App: React.FC = () => {
     <main>
       <h1>🤠 experienced sheriff in the city</h1>
 
-      {!data ? (
+      {!isLoading ? (
         <Loading />
       ) : (
-        <pre className='data-box'>{JSON.stringify(data.allPeople?.people, null, 2)}</pre>
+        <pre className='data-box'>
+          {JSON.stringify(data!.allPeople?.people, null, 2)}
+        </pre>
       )}
     </main>
   );

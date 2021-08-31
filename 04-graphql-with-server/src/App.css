@@ -1,0 +1,36 @@
+main {
+  margin-top: 3em;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.4em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.data-box {
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2rem;
+  padding: 1rem;
+  margin: 1em;
+  min-width: 300px;
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid white;
+  border-radius: 10em;
+  font-size: 1.2em;
+  padding: 0.4em 1em;
+  color: white;
+  outline: none;
+}

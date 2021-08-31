@@ -5,14 +5,20 @@
   "main": "index.js",
   "scripts": {
     "build:index": "rm -rf dist && mkdir -p dist && cp src/index.html dist/",
-    "build": "pnpm run build:index && esbuild src/main.tsx --outdir=dist --bundle --target=es2020",
-    "dev": "pnpm run build -- --servedir=dist",
+    "build:ui": "pnpm run build:index && esbuild src/main.tsx --outdir=dist --bundle --target=es2020",
+    "build": "netlify build",
+    "dev": "netlify dev",
+    "deploy": "netlify deploy",
     "codegen": "graphql-codegen --config codegen.yml",
     "postinstall": "pnpm run codegen"
   },
   "author": "Lukas Holzer <lukas.holzer@typeflow.cc>",
   "license": "MIT",
   "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^7.0.6",
+    "@graphql-tools/load": "^7.1.9",
+    "@graphql-tools/schema": "^8.1.2",
+    "apollo-server-lambda": "^3.3.0",
     "graphql": "^15.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -24,9 +30,12 @@
     "@graphql-codegen/typescript": "^2.1.2",
     "@graphql-codegen/typescript-operations": "^2.1.2",
     "@graphql-codegen/typescript-react-query": "^2.1.2",
+    "@netlify/functions": "^0.7.2",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "esbuild": "^0.12.24",
+    "graphql-config": "^4.0.1",
+    "netlify-cli": "^6.8.0",
     "typescript": "^4.4.2"
   }
 }

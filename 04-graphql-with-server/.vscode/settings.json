@@ -1,0 +1,8 @@
+{
+  // Required: The website to display
+  "liveFrame.url": "http://localhost:8888",
+  // Optional: Title for the pane tab heading
+  "liveFrame.title": "graphql-server-with-react-ui",
+  // Optional: Which pane to open the frame in
+  "liveFrame.pane": "Beside"
+}

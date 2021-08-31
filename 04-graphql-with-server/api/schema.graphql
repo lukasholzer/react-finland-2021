@@ -1,0 +1,18 @@
+input BooksInput {
+  "filter by an author"
+  byAuthor: String
+}
+
+type Book {
+  name: String
+  author: String
+  description: String
+}
+
+type Query {
+  books(filter: BooksInput): [Book]
+}
+
+schema {
+  query: Query
+}
