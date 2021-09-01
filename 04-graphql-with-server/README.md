@@ -13,8 +13,8 @@ For building and deploying the serverless functions the [Netlify](https://www.ne
 
 1. Run `pnpm install` to install all dependencies
 2. `pnpm run dev`.
-3. open the browser at `http://localhost:8888/`
-4. The GraphQL playground can be visited at `http://localhost:8888/.netlify/functions/graphql`
+3. open the browser at [`http://localhost:8888/`](http://localhost:8888/)
+4. The GraphQL playground can be visited at [`http://localhost:8888/.netlify/functions/graphql`](http://localhost:8888/.netlify/functions/graphql)
   
 
-The deployed version can be found under this url: `https://react-finland-2021-graphql-with-server.netlify.app`
+The deployed version can be found under this url: [`https://react-finland-2021-graphql-with-server.netlify.app`](https://react-finland-2021-graphql-with-server.netlify.app)
