@@ -19,6 +19,11 @@
       "name": "The Very Hungry Caterpillar",
       "author": "Eric Carle",
       "description": "The Very Hungry Caterpillar is a children's picture book."
+    },
+    {
+      "name": "TypeScript in 50 Lessons",
+      "author": "Stefan Baumgartner",
+      "description": "Learn TypeScript from a JavaScript developer's point of view"
     }
   ]
 }
